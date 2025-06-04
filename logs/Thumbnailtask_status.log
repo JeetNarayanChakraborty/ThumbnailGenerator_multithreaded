@@ -1,0 +1,354 @@
+2025-06-04T00:05:13.554+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 16748 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:05:13.571+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:05:13.690+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-04T00:05:13.691+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-04T00:05:16.154+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:05:16.179+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:05:16.180+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:05:16.248+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:05:16.249+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2556 ms
+2025-06-04T00:05:16.549+05:30  WARN 16748 --- [GenarateThumbnail] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webConfig': Unsatisfied dependency expressed through field 'apiInterceptor': No qualifying bean of type 'com.mThreading.GenarateThumbnail.config.APICallInterceptor' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-06-04T00:05:16.558+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-06-04T00:05:16.597+05:30  INFO 16748 --- [GenarateThumbnail] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-04T00:05:16.668+05:30 ERROR 16748 --- [GenarateThumbnail] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field apiInterceptor in com.mThreading.GenarateThumbnail.config.WebConfig required a bean of type 'com.mThreading.GenarateThumbnail.config.APICallInterceptor' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.mThreading.GenarateThumbnail.config.APICallInterceptor' in your configuration.
+
+2025-06-04T00:33:01.095+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 16080 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:33:01.099+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:33:01.184+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-04T00:33:01.184+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-04T00:33:03.189+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:33:03.211+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:33:03.212+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:33:03.281+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:33:03.282+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2097 ms
+2025-06-04T00:33:04.039+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T00:33:04.064+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T00:33:04.187+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T00:33:04.207+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 3.921 seconds (process running for 4.66)
+2025-06-04T00:33:56.530+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T00:33:56.530+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T00:33:56.532+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-04T00:35:15.466+05:30  INFO 16080 --- [GenarateThumbnail] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-04T00:35:15.472+05:30  INFO 16080 --- [GenarateThumbnail] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T00:35:15.488+05:30  INFO 16080 --- [GenarateThumbnail] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T00:35:15.642+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 16080 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:35:15.643+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:35:16.274+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:35:16.277+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:35:16.278+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:35:16.301+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:35:16.302+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 652 ms
+2025-06-04T00:35:16.599+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T00:35:16.606+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T00:35:16.633+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T00:35:16.644+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 1.072 seconds (process running for 137.096)
+2025-06-04T00:35:16.649+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-04T00:35:46.953+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T00:35:46.953+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T00:35:46.956+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-04T00:35:46.983+05:30 ERROR 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [homePage]: would dispatch back to the current handler URL [/homePage] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+
+jakarta.servlet.ServletException: Circular view path [homePage]: would dispatch back to the current handler URL [/homePage] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-04T00:38:15.020+05:30  INFO 16080 --- [GenarateThumbnail] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-04T00:38:15.022+05:30  INFO 16080 --- [GenarateThumbnail] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T00:38:15.035+05:30  INFO 16080 --- [GenarateThumbnail] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T00:38:15.165+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 16080 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:38:15.166+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:38:15.647+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:38:15.648+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:38:15.648+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:38:15.679+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:38:15.679+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 508 ms
+2025-06-04T00:38:15.831+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T00:38:15.834+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T00:38:15.854+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T00:38:15.866+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 0.76 seconds (process running for 316.318)
+2025-06-04T00:38:15.870+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-04T00:38:36.074+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T00:38:36.074+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T00:38:36.076+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-04T00:42:09.424+05:30  INFO 16080 --- [GenarateThumbnail] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-06-04T00:42:09.428+05:30  INFO 16080 --- [GenarateThumbnail] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T00:42:09.448+05:30  INFO 16080 --- [GenarateThumbnail] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T00:42:09.659+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 16080 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:42:09.660+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:42:10.312+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:42:10.318+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:42:10.319+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:42:10.375+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:42:10.376+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 710 ms
+2025-06-04T00:42:10.962+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T00:42:10.977+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T00:42:11.077+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T00:42:11.099+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 1.521 seconds (process running for 551.551)
+2025-06-04T00:42:11.107+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-04T00:42:12.418+05:30  INFO 16080 --- [GenarateThumbnail] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
+2025-06-04T00:42:12.420+05:30  INFO 16080 --- [GenarateThumbnail] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T00:42:12.431+05:30  INFO 16080 --- [GenarateThumbnail] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T00:42:12.547+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 16080 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:42:12.548+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:42:13.015+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:42:13.016+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:42:13.017+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:42:13.041+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:42:13.041+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 489 ms
+2025-06-04T00:42:13.191+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T00:42:13.195+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T00:42:13.223+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T00:42:13.233+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 0.741 seconds (process running for 553.685)
+2025-06-04T00:42:13.237+05:30  INFO 16080 --- [GenarateThumbnail] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-04T00:43:09.739+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T00:43:09.739+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T00:43:09.739+05:30  INFO 16080 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-04T00:43:42.706+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 5304 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:43:42.710+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:43:42.810+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-04T00:43:42.811+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-04T00:43:44.950+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:43:44.976+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:43:44.977+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:43:45.052+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:43:45.053+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2241 ms
+2025-06-04T00:43:46.035+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T00:43:46.050+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T00:43:46.181+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T00:43:46.206+05:30  INFO 5304 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 4.366 seconds (process running for 5.056)
+2025-06-04T00:48:09.196+05:30  INFO 5304 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T00:48:09.196+05:30  INFO 5304 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T00:48:09.215+05:30  INFO 5304 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2025-06-04T00:48:45.970+05:30  WARN 5304 --- [GenarateThumbnail] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-04T00:48:45.985+05:30  WARN 5304 --- [GenarateThumbnail] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-04T00:48:47.072+05:30  WARN 5304 --- [GenarateThumbnail] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-04T00:48:47.072+05:30  WARN 5304 --- [GenarateThumbnail] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-04T00:56:49.566+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 13024 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:56:49.571+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:56:49.683+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-04T00:56:49.683+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-04T00:56:51.900+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:56:51.930+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:56:51.931+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:56:52.018+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:56:52.019+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2335 ms
+2025-06-04T00:56:53.014+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T00:56:53.028+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T00:56:53.160+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T00:56:53.183+05:30  INFO 13024 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 4.536 seconds (process running for 5.194)
+2025-06-04T00:57:09.406+05:30  INFO 13024 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T00:57:09.406+05:30  INFO 13024 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T00:57:09.406+05:30  INFO 13024 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-04T00:57:19.296+05:30 ERROR 13024 --- [GenarateThumbnail] [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "upload": Error resolving template [upload], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [upload], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-04T00:57:19.316+05:30 ERROR 13024 --- [GenarateThumbnail] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [upload], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [upload], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-04T00:57:21.063+05:30  INFO 13024 --- [GenarateThumbnail] [pool-2-thread-1] c.m.G.service.ThumbnailService           : SUCCESS: Thumbnail created for ff4b91d2-61a6-42bc-b7fd-df9ea78bc9ec_20250516_050607.jpg
+2025-06-04T00:57:21.180+05:30  INFO 13024 --- [GenarateThumbnail] [pool-2-thread-2] c.m.G.service.ThumbnailService           : SUCCESS: Thumbnail created for 93f29466-0c98-4342-afe9-d6e88ad3050f_20250516_071445.jpg
+2025-06-04T00:58:26.178+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 3244 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T00:58:26.178+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T00:58:26.271+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-04T00:58:26.271+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-04T00:58:28.490+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T00:58:28.522+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T00:58:28.522+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T00:58:28.612+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T00:58:28.612+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2338 ms
+2025-06-04T00:58:29.776+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T00:58:29.776+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T00:58:29.888+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T00:58:29.920+05:30  INFO 3244 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 4.719 seconds (process running for 5.78)
+2025-06-04T00:59:21.823+05:30  INFO 3244 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T00:59:21.823+05:30  INFO 3244 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T00:59:21.829+05:30  INFO 3244 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-06-04T00:59:58.685+05:30  INFO 3244 --- [GenarateThumbnail] [pool-2-thread-2] c.m.G.service.ThumbnailService           : SUCCESS: Thumbnail created for 3757b5ee-70d1-474d-9c21-48c0e2a88418_20250516_094410.jpg
+2025-06-04T00:59:58.685+05:30  INFO 3244 --- [GenarateThumbnail] [pool-2-thread-1] c.m.G.service.ThumbnailService           : SUCCESS: Thumbnail created for 33e875a4-82fe-4c7b-92bf-0baf26658fb6_20250516_094358.jpg
+2025-06-04T01:02:06.716+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Starting GenarateThumbnailApplication using Java 21.0.1 with PID 12248 (C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail\target\classes started by Jeet in C:\Image Thumbnail generator API (multithreaded)\GenarateThumbnail)
+2025-06-04T01:02:06.726+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T01:02:06.919+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-04T01:02:06.921+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-04T01:02:10.462+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T01:02:10.496+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T01:02:10.499+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T01:02:10.581+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T01:02:10.589+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3665 ms
+2025-06-04T01:02:11.618+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-04T01:02:11.634+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-06-04T01:02:11.770+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T01:02:11.801+05:30  INFO 12248 --- [GenarateThumbnail] [restartedMain] c.m.G.GenarateThumbnailApplication       : Started GenarateThumbnailApplication in 6.191 seconds (process running for 7.344)
+2025-06-04T01:02:41.423+05:30  INFO 12248 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T01:02:41.423+05:30  INFO 12248 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T01:02:41.423+05:30  INFO 12248 --- [GenarateThumbnail] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
