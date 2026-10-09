@@ -1,76 +1,93 @@
 package com.mThreading.GenarateThumbnail;
 
+import com.mThreading.GenarateThumbnail.service.APICallCounterService;
 import com.mThreading.GenarateThumbnail.service.ThumbnailService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import com.mThreading.GenarateThumbnail.service.APICallCounterService;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.*;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 @Controller
-public class MainController 
+public class MainController
 {
+    private static final Logger log = LoggerFactory.getLogger(MainController.class);
+
+    // OPTIMIZATION: Ensure directories exist safely at startup using an absolute target path if needed
     private static final String ORIGINAL_DIR = "src/main/resources/static/originals/";
 
     @Autowired
     private ThumbnailService thumbnailService;
-    
+
     @Autowired
-    private APICallCounterService APICallCounterService; 
-    
-    
+    private APICallCounterService apiCallCounterService;
+
     @GetMapping("/home")
     public String getHomePage()
     {
-    	return "homePage";
+        return "homePage";
     }
 
     @PostMapping("/upload")
-    public String uploadImages(@RequestParam("files") MultipartFile[] files, Model model) 
+    public String uploadImages(@RequestParam("files") MultipartFile[] files, Model model)
     {
-        List<String> thumbnailFiles = new ArrayList<>();
+        // Increment counter on every incoming load metric spike!
+        apiCallCounterService.incrementCallCount();
 
-        for(MultipartFile file : files) 
+        List<String> successfulThumbnails = new ArrayList<>();
+        List<String> failedFiles = new ArrayList<>();
+
+        File directory = new File(ORIGINAL_DIR);
+
+        if(!directory.exists())
         {
-            try 
+            directory.mkdirs();
+        }
+
+        for(MultipartFile file : files)
+        {
+            if(file.isEmpty()) continue; // Skip accidental empty inputs
+
+            try
             {
                 String fileName = UUID.randomUUID() + "_" + file.getOriginalFilename();
-                String path = ORIGINAL_DIR + fileName;
+                byte[] fileBytes = file.getBytes();
 
-                Files.copy(file.getInputStream(), Paths.get(path)); // Save original file
-                thumbnailService.generateThumbnailAsync(fileName); // Trigger async thumbnail creation
-                thumbnailFiles.add("thumb_" + fileName);
-                model.addAttribute("message", "Upload successful!");
+                // Fire async task into our dynamically scaling thread pool
+                thumbnailService.processImageAsync(fileName, fileBytes);
+
+                successfulThumbnails.add("thumb_" + fileName);
             }
-            
-            catch(Exception e) 
+            catch(Exception e)
             {
-            	model.addAttribute("message", "Failed to upload: " + e.getMessage());
+                log.error("Failed to process file: {}", file.getOriginalFilename(), e);
+                failedFiles.add(file.getOriginalFilename());
             }
         }
-        
+
+        if(failedFiles.isEmpty()) model.addAttribute("message", "All uploads processed successfully!");
+        else if(successfulThumbnails.isEmpty()) model.addAttribute("message", "All uploads failed : " + failedFiles);
+        else model.addAttribute("message", "Partial Success! Failed items: " + failedFiles);
+
+        model.addAttribute("thumbnails", successfulThumbnails);
         return "uploadStatus";
     }
-    
+
     @GetMapping("/getAPICallCount")
     @ResponseBody
-    public String getCurrTenSecondAPICallCount() 
-	{
-    	int apiCallCount = APICallCounterService.getApiCallCount(); // Returns the current 10 second API call count
-		return "API calls per 10 seconds: " + apiCallCount;
-	}
+    public String getCurrTenSecondAPICallCount()
+    {
+        int apiCallCount = apiCallCounterService.getApiCallCount();
+        return "API calls per 10 seconds: " + apiCallCount;
+    }
 }
-
-
-
-
-
-
-
-
-

@@ -13,7 +13,6 @@ public class APICallInterceptor implements HandlerInterceptor
 {
 	@Autowired
     private APICallCounterService apiCallCounterService;
-
 	
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) 

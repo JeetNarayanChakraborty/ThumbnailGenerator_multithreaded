@@ -1,25 +1,24 @@
 package com.mThreading.GenarateThumbnail.service;
 
 import org.springframework.stereotype.Component;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 @Component
 public class APICallCounterService 
 {
-	private int apiCallCount = 0;
+	private final AtomicInteger apiCallCount = new AtomicInteger(0);
 
-	public synchronized void incrementCallCount() // Method to increment the API call count
+	public void incrementCallCount()
 	{
-		apiCallCount++;
+		apiCallCount.incrementAndGet();
 	}
-
-	public synchronized int getApiCallCount()  // Method to retrieve the current API call count	
+	public int getApiCallCount()
 	{
-		return apiCallCount;
+		return apiCallCount.get();
 	}
-
-	public synchronized void resetCallCount() // Method to reset the API call count
+	public void resetCallCount()
 	{
-		apiCallCount = 0;
+		apiCallCount.set(0);
 	}
 }

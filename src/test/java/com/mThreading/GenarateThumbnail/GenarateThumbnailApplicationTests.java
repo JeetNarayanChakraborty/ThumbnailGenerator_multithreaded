@@ -9,5 +9,4 @@ class GenarateThumbnailApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
